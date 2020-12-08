@@ -148,7 +148,7 @@ if __name__ == '__main__':
     
     # Build residual encoder model
     print("🤖 Build residual encoder model...")
-    residual_encoder = ResidualEncoder()
+    residual_encoder = ResidualDecoder()
     
     input = tf.constant(1.0, shape=[batch_size, 224, 224, 3])
     is_training = tf.placeholder(tf.bool, name="is_training")
